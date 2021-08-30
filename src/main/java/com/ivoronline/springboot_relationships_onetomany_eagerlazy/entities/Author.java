@@ -20,7 +20,7 @@ public class Author {
   public Integer age;
 
   //RELATIONSHIPS
-  @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+  @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
   public Set<Book> books;
 
   //CONSTRUCTORS
